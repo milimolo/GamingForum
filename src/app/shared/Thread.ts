@@ -1,10 +1,11 @@
-import {Forum} from "./Forum";
+import {Comment} from "./Comment";
 
 export interface Thread {
   id: number;
   username: string;
   title: string;
+  content: string;
   comments: Comment[];
-  parentForum: Forum;
+  parentForumId: number;
   category: string;
 }
